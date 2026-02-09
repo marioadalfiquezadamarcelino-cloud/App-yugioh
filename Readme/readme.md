@@ -7,7 +7,7 @@ su propio deck siguiendo las reglas del juego.
 
 ---
 
-## 📌 Contenidos
+##  Contenidos
 - Descripción del proyecto
 - Página principal
 - Tecnologías utilizadas
@@ -20,7 +20,7 @@ su propio deck siguiendo las reglas del juego.
 
 ---
 
-## 📖 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Este proyecto ha sido desarrollado como un prototipo utilizando **React JS,
 JavaScript, HTML y CSS**.  
@@ -36,7 +36,7 @@ código limpio y experiencia de usuario (UX/UI)**.
 
 ---
 
-## 🏠 Página Principal
+##  Página Principal
 
 La página principal muestra una cuadrícula responsive de cartas generadas a
 partir de un array de objetos JSON.  
@@ -49,7 +49,7 @@ La página es accesible desde:
 
 ---
 
-## 🛠 Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 - React JS
 - Vite
@@ -60,7 +60,7 @@ La página es accesible desde:
 
 ---
 
-## 🧩 Componentes de Terceros
+##  Componentes de Terceros
 
 - React: https://reactjs.org/
 - React Router DOM: https://reactrouter.com/
@@ -68,7 +68,7 @@ La página es accesible desde:
 
 ---
 
-## 📚 Recursos y Tutoriales
+##  Recursos y Tutoriales
 
 - Documentación oficial de React  
   https://reactjs.org/docs/getting-started.html
@@ -81,7 +81,7 @@ La página es accesible desde:
 
 ---
 
-## 🎨 Inspiración de Diseño
+##  Inspiración de Diseño
 
 - Plantillas y ejemplos de Figma  
   https://www.figma.com/templates/web-design-inspiration/
@@ -90,7 +90,7 @@ La página es accesible desde:
 
 ---
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 src/
 ├─ components/
