@@ -1,0 +1,15 @@
+.privacy-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
+
+.privacy-page h2 {
+  margin-bottom: 20px;
+}
+
+.privacy-page h3 {
+  margin-top: 25px;
+  color: #057ef0;
+}

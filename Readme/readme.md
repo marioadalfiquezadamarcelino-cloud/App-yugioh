@@ -1,23 +1,109 @@
-# Yu-Gi-Oh! Card App
+# Yu-Gi-Oh! React App 🃏
 
-## Project Description
-A React application that showcases a collection of Yu-Gi-Oh! cards. Users can view cards, build a deck, and learn about the game.
+Aplicación web desarrollada con React JS que muestra una colección de cartas
+inspiradas en el juego Yu-Gi-Oh!.  
+Los usuarios pueden explorar las cartas, ver información detallada y construir
+su propio deck siguiendo las reglas del juego.
 
-## Main Page
-The Home page displays a gallery of cards loaded from a JSON file. Each card shows its name, type, attack, defense, and image.
+---
 
-## Third-Party Components
-- React Router DOM for navigation
-- i18next for multilingual support (optional)
+## 📌 Contenidos
+- Descripción del proyecto
+- Página principal
+- Tecnologías utilizadas
+- Componentes de terceros
+- Recursos y tutoriales
+- Inspiración de diseño
+- Estructura del proyecto
+- Diseño responsive
+- Instalación y uso
 
-## Tutorials / Resources
-- [React Router Tutorial](https://reactrouter.com/)
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [Best README Template](https://github.com/othneildrew/Best-README-Template)
+---
 
-## Figma Design
-[Link to Figma inspiration](https://www.figma.com/templates/web-design-inspiration/)
+## 📖 Descripción del Proyecto
 
-## Other Notes
-- Responsive design using flexbox and media queries
-- Clean code conventions with camelCase, PascalCase, and kebab-case
+Este proyecto ha sido desarrollado como un prototipo utilizando **React JS,
+JavaScript, HTML y CSS**.  
+La aplicación permite:
+
+- Mostrar cartas a partir de un archivo JSON
+- Visualizar información detallada mediante un modal
+- Construir un deck con un máximo de 3 copias por carta
+- Navegar entre varias páginas compartiendo Header y Footer
+
+El objetivo principal es aplicar buenas prácticas de **componentes reutilizables,
+código limpio y experiencia de usuario (UX/UI)**.
+
+---
+
+## 🏠 Página Principal
+
+La página principal muestra una cuadrícula responsive de cartas generadas a
+partir de un array de objetos JSON.  
+Al hacer clic sobre una carta se abre una ventana modal con información completa:
+imagen, nombre, tipo, efecto y valores de ATK y DEF.
+
+La página es accesible desde:
+- `/`
+- `/home`
+
+---
+
+## 🛠 Tecnologías Utilizadas
+
+- React JS
+- Vite
+- JavaScript (ES6)
+- HTML5
+- CSS3
+- Flexbox y Media Queries
+
+---
+
+## 🧩 Componentes de Terceros
+
+- React: https://reactjs.org/
+- React Router DOM: https://reactrouter.com/
+- Vite: https://vitejs.dev/
+
+---
+
+## 📚 Recursos y Tutoriales
+
+- Documentación oficial de React  
+  https://reactjs.org/docs/getting-started.html
+- Documentación de Vite  
+  https://vitejs.dev/guide/
+- Plantilla README  
+  https://github.com/othneildrew/Best-README-Template
+- Principios de código limpio  
+  https://www.hostgator.mx/blog/clean-code-codigo-limpio/
+
+---
+
+## 🎨 Inspiración de Diseño
+
+- Plantillas y ejemplos de Figma  
+  https://www.figma.com/templates/web-design-inspiration/
+- Conceptos de UX/UI  
+  https://woko.agency/blog/monitorizar-evaluar-experiencia-usuario/
+
+---
+
+## 📁 Estructura del Proyecto
+
+src/
+├─ components/
+│ ├─ Card/
+│ ├─ CardModal/
+│ ├─ Header/
+│ └─ Footer/
+├─ pages/
+│ ├─ Home/
+│ ├─ Deck/
+│ ├─ About/
+│ └─ Privacy/
+├─ data/
+│ └─ cards.json
+├─ App.jsx
+└─ main.jsx
