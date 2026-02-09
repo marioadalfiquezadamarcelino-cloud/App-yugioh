@@ -100,7 +100,7 @@ The design and layout were inspired by modern card-based UI patterns and web des
 
 ##  Project Structure
 
-- src/
+src/
 ├─ components/
 │ ├─ Card/
 │ ├─ CardModal/
@@ -114,3 +114,4 @@ The design and layout were inspired by modern card-based UI patterns and web des
 │ └─ cards.json
 ├─ App.jsx
 └─ main.jsx
+
