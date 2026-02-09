@@ -1,16 +1,116 @@
-# React + Vite
+# Yu-Gi-Oh! React App 🃏
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that showcases a collection of Yu-Gi-Oh! cards.  
+Users can explore cards, view detailed information in a modal, and build their own deck with real Yu-Gi-Oh! rules (maximum 3 copies per card).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Home Page](#home-page)
+- [Built With](#built-with)
+- [Third-Party Components](#third-party-components)
+- [Tutorials and Resources](#tutorials-and-resources)
+- [Design Inspiration](#design-inspiration)
+- [Project Structure](#project-structure)
+- [Responsive Design](#responsive-design)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Author](#author)
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+##  About the Project
 
-## Expanding the ESLint configuration
+This project was developed as a React JS prototype using **JavaScript, HTML, and CSS**.  
+The application simulates a Yu-Gi-Oh! card collection where users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse cards from a JSON data source
+- View full card details using a modal component
+- Build a deck following official Yu-Gi-Oh! rules (up to 3 copies per card)
+- Navigate between multiple pages with shared components
+
+The project focuses on **clean code**, **component reusability**, **UX/UI**, and **responsive design**.
+
+---
+
+##  Home Page
+
+The Home page displays a responsive grid of Yu-Gi-Oh! cards generated from a JSON array.  
+Each card shows basic information and can be clicked to open a modal with full details, including:
+
+- Card image
+- Name
+- Type
+- Effect
+- ATK / DEF values
+
+The Home page is accessible from:
+- `/`
+- `/home`
+
+---
+
+## Built With
+
+- **React JS**
+- **Vite**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **Flexbox & Media Queries**
+
+---
+##  Third-Party Components
+
+This project uses the following third-party tools and libraries:
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+
+*(No heavy external libraries were used to keep the project lightweight.)*
+
+---
+
+##  Tutorials and Resources
+
+The following resources were used during development:
+
+- React Official Documentation:  
+  https://reactjs.org/docs/getting-started.html
+- Vite Documentation:  
+  https://vitejs.dev/guide/
+- README Template Inspiration:  
+  https://github.com/othneildrew/Best-README-Template
+- Clean Code Principles:  
+  https://www.hostgator.mx/blog/clean-code-codigo-limpio/
+
+---
+
+##  Design Inspiration
+
+The design and layout were inspired by modern card-based UI patterns and web design examples.
+
+- Figma Web Design Inspiration:  
+  https://www.figma.com/templates/web-design-inspiration/
+- UX/UI Concepts:  
+  https://woko.agency/blog/monitorizar-evaluar-experiencia-usuario/
+
+---
+
+##  Project Structure
+
+- src/
+├─ components/
+│ ├─ Card/
+│ ├─ CardModal/
+│ ├─ Header/
+│ └─ Footer/
+├─ pages/
+│ ├─ Home/
+│ ├─ Deck/
+│ └─ About/
+├─ data/
+│ └─ cards.json
+├─ App.jsx
+└─ main.jsx
