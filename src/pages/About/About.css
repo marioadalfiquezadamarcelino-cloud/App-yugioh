@@ -1,0 +1,10 @@
+.about-page{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(72, 72, 233);
+}
+
+.about-page a{
+    color: #11eff7;
+    text-decoration: underline;
+}
