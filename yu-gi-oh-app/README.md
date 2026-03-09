@@ -1,104 +1,137 @@
 # Yu-Gi-Oh! React App 🃏
 
-A React-based web application that showcases a collection of Yu-Gi-Oh! cards.  
-Users can explore cards, view detailed information in a modal, and build their own deck with real Yu-Gi-Oh! rules (maximum 3 copies per card).
+Yu-Gi-Oh is a React web application that allows users to explore and manage a collection of Yu-Gi-Oh style cards. The project demonstrates modern frontend development using React components, routing, state management and integration with Firebase Firestore.
+
+Users can search cards, build their own deck, and manage cards using a CRUD system.
 
 ---
 
-## Table of Contents
-- [About the Project](#about-the-project)
-- [Home Page](#home-page)
-- [Built With](#built-with)
-- [Third-Party Components](#third-party-components)
-- [Tutorials and Resources](#tutorials-and-resources)
-- [Design Inspiration](#design-inspiration)
-- [Project Structure](#project-structure)
-- [Responsive Design](#responsive-design)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Author](#author)
+## Contents
+- Project Description
+- Homepage
+- Technologies Used
+- Third-Party Components
+- Resources and Tutorials
+- Design Inspiration
+- Project Structure
+- Responsive Design
+- Installation and Use
 
 ---
 
-##  About the Project
+## Project Description
 
-This project was developed as a React JS prototype using **JavaScript, HTML, and CSS**.  
-The application simulates a Yu-Gi-Oh! card collection where users can:
+This project was developed as a prototype using **React JS,
+JavaScript, HTML, and CSS**. The application allows you to:
 
-- Browse cards from a JSON data source
-- View full card details using a modal component
-- Build a deck following official Yu-Gi-Oh! rules (up to 3 copies per card)
-- Navigate between multiple pages with shared components
+- Display cards from a JSON file
+- View detailed information using a modal window
+- Build a deck with a maximum of 3 copies per card
+- Navigate between multiple pages, sharing the header and footer
 
-The project focuses on **clean code**, **component reusability**, **UX/UI**, and **responsive design**.
-
----
-
-##  Home Page
-
-The Home page displays a responsive grid of Yu-Gi-Oh! cards generated from a JSON array.  
-Each card shows basic information and can be clicked to open a modal with full details, including:
-
-- Card image
-- Name
-- Type
-- Effect
-- ATK / DEF values
-
-The Home page is accessible from:
-- `/`
-- `/home`
+The main objective is to apply best practices for reusable components, clean code, and user experience (UX/UI).
 
 ---
 
-## Built With
+## Home Page
 
-- **React JS**
-- **Vite**
-- **JavaScript (ES6+)**
-- **HTML5**
-- **CSS3**
-- **Flexbox & Media Queries**
+The Home page is the main entry point of the application.
 
----
-##  Third-Party Components
+It dynamically loads card data from Firebase Firestore, which is structured as a JSON-based collection of objects. Each card contains properties such as name, attack, defense, category, image, and description.
 
-This project uses the following third-party tools and libraries:
+Features included:
 
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
+- Dynamic data fetching from Firebase
+- JSON object array rendering
+- Category filtering system
+- Search functionality by card name
+- State management using React useState
+- Reusable Card component receiving props
+- Responsive grid layout
 
-*(No heavy external libraries were used to keep the project lightweight.)*
-
----
-
-##  Tutorials and Resources
-
-The following resources were used during development:
-
-- React Official Documentation:  
-  https://reactjs.org/docs/getting-started.html
-- Vite Documentation:  
-  https://vitejs.dev/guide/
-- README Template Inspiration:  
-  https://github.com/othneildrew/Best-README-Template
-- Clean Code Principles:  
-  https://www.hostgator.mx/blog/clean-code-codigo-limpio/
+This page demonstrates:
+- useState for search and filtering
+- useEffect for Firestore data fetching
+- Props communication between components
 
 ---
 
-##  Design Inspiration
+## Technologies Used
 
-The design and layout were inspired by modern card-based UI patterns and web design examples.
-
-- Figma Web Design Inspiration:  
-  https://www.figma.com/templates/web-design-inspiration/
-- UX/UI Concepts:  
-  https://woko.agency/blog/monitorizar-evaluar-experiencia-usuario/
+- React
+- React Router
+- Firebase Firestore
+- JavaScript (ES6)
+- CSS
+- JSON data
+- RSS API
 
 ---
 
-##  Project Structure
+## Third-Party Components
+
+- React: https://reactjs.org/
+- React Router DOM: https://reactrouter.com/
+- Vite: https://vitejs.dev/
+
+---
+ ## Features
+
+ - Search cards by name
+ - View a collection of cards
+ - Add new cards to the database
+ - Update existing cards
+ - Delete cards
+ - Build your own deck (max 3 copies per card)
+ - RSS News page with Yu-Gi-Oh updates
+ - Built using React components
+---
+
+## Resources and Tutorials
+
+- Official React Documentation
+
+https://reactjs.org/docs/getting-started.html
+- Vite Documentation
+
+https://vitejs.dev/guide/
+- README Template
+
+https://github.com/othneildrew/Best-README-Template
+- Clean Code Principles
+
+https://www.hostgator.mx/blog/clean-code-codigo-limpio/
+
+---
+
+## Design Inspiration
+
+- Figma Templates and Examples
+
+https://www.figma.com/templates/web-design-inspiration/
+- UX/UI Concepts
+
+https://woko.agency/blog/monitorizar-evaluar-experiencia-usuario/
+
+---
+
+## RSS News Page
+
+The project includes a News page that connects to an RSS feed related to Yu-Gi-Oh news.
+
+This fulfills the RSS requirement of the assignment.
+
+
+## Important
+
+- To run the project correctly, you must navigate into the project folder:
+- cd yu-gi-oh-app
+- Then install dependencies:
+- npm install
+- Then start the development server:
+- npm run dev
+
+## Project Structure
 
 src/
 ├─ components/
@@ -109,9 +142,13 @@ src/
 ├─ pages/
 │ ├─ Home/
 │ ├─ Deck/
-│ └─ About/
+│ ├─ About/
+│ └─Privacy/
+│ └─News/
+│ └─Chat/
+| 
 ├─ data/
 │ └─ cards.json
+│ └─ firabase.js
 ├─ App.jsx
 └─ main.jsx
-
