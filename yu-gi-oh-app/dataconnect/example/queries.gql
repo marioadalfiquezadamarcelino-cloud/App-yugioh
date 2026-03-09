@@ -1,0 +1,56 @@
+query ListAllCards @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public as it only lists general card information.") {
+  cards {
+    id
+    cardName
+    cardType
+    attack
+    defense
+    level
+    attribute
+    race
+    imageUrl
+  }
+}
+
+mutation CreateNewDeck($deckName: String!, $public: Boolean!, $description: String) @auth(level: USER) {
+  deck_insert(data: {
+    userId_expr: "auth.uid",
+    deckName: $deckName,
+    public: $public,
+    description: $description,
+    createdAt_expr: "request.time",
+    updatedAt_expr: "request.time"
+  }) {
+    id
+  }
+}
+
+query GetMyCollectionCards @auth(level: USER) {
+  collectionCards(where: {userId: {eq_expr: "auth.uid"}}) {
+    card {
+      cardName
+      cardType
+      attack
+      defense
+      level
+      attribute
+      race
+      imageUrl
+    }
+    quantity
+    userRating
+    notes
+  }
+}
+
+mutation AddCardToDeck($deckId: UUID!, $cardId: UUID!, $quantity: Int!, $position: Int!) @auth(level: USER) {
+  deckCard_insert(data: {
+    deckId: $deckId,
+    cardId: $cardId,
+    quantity: $quantity,
+    position: $position
+  }) {
+    deckId
+    cardId
+  }
+}

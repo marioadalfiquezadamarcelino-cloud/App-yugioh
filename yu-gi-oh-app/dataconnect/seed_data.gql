@@ -1,0 +1,112 @@
+mutation CreateDemoData @transaction @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users.") {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      displayName: "Yugi Muto",
+      email: "yugi.muto@example.com",
+      createdAt: "2024-01-01T00:00:00Z",
+      photoUrl: "https://example.com/yugi.jpg"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      displayName: "Seto Kaiba",
+      email: "seto.kaiba@example.com",
+      createdAt: "2024-01-01T00:00:00Z",
+      photoUrl: "https://example.com/kaiba.jpg"
+    }
+  ])
+  card_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440002",
+      cardName: "Dark Magician",
+      cardType: "Monster",
+      description: "The ultimate wizard in terms of attack and defense.",
+      attack: 2500,
+      defense: 2100,
+      level: 7,
+      attribute: "Dark",
+      race: "Spellcaster",
+      imageUrl: "https://example.com/dark_magician.jpg",
+      createdAt: "2024-01-01T00:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440003",
+      cardName: "Blue-Eyes White Dragon",
+      cardType: "Monster",
+      description: "This legendary dragon is a powerful engine of destruction.",
+      attack: 3000,
+      defense: 2500,
+      level: 8,
+      attribute: "Light",
+      race: "Dragon",
+      imageUrl: "https://example.com/blue_eyes.jpg",
+      createdAt: "2024-01-01T00:00:00Z"
+    }
+  ])
+  collectionCard_insertMany(data: [
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      cardId: "550e8400-e29b-41d4-a716-446655440002",
+      quantity: 3,
+      createdAt: "2024-01-02T00:00:00Z",
+      userRating: 5,
+      notes: "My favorite card!"
+    },
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440001",
+      cardId: "550e8400-e29b-41d4-a716-446655440003",
+      quantity: 1,
+      createdAt: "2024-01-02T00:00:00Z",
+      userRating: 4,
+      notes: "A powerful dragon."
+    }
+  ])
+  deck_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440004",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      deckName: "Yugi's Starter Deck",
+      public: true,
+      description: "A classic deck.",
+      createdAt: "2024-01-03T00:00:00Z",
+      updatedAt: "2024-01-03T00:00:00Z"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440005",
+      userId: "550e8400-e29b-41d4-a716-446655440001",
+      deckName: "Kaiba's Dragon Deck",
+      public: false,
+      description: "Unleash the dragons!",
+      createdAt: "2024-01-03T00:00:00Z",
+      updatedAt: "2024-01-03T00:00:00Z"
+    }
+  ])
+  deckCard_insertMany(data: [
+    {
+      deckId: "550e8400-e29b-41d4-a716-446655440004",
+      cardId: "550e8400-e29b-41d4-a716-446655440002",
+      quantity: 1,
+      position: 1
+    },
+    {
+      deckId: "550e8400-e29b-41d4-a716-446655440005",
+      cardId: "550e8400-e29b-41d4-a716-446655440003",
+      quantity: 3,
+      position: 1
+    }
+  ])
+  cardComment_insertMany(data: [
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      cardId: "550e8400-e29b-41d4-a716-446655440002",
+      commentText: "A timeless classic!",
+      createdAt: "2024-01-04T00:00:00Z"
+    },
+    {
+      userId: "550e8400-e29b-41d4-a716-446655440001",
+      cardId: "550e8400-e29b-41d4-a716-446655440003",
+      commentText: "The strongest dragon!",
+      createdAt: "2024-01-04T00:00:00Z"
+    }
+  ])
+}
