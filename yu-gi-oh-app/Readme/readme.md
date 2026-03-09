@@ -117,10 +117,12 @@ https://woko.agency/blog/monitorizar-evaluar-experiencia-usuario/
 
 ## RSS News Page
 
-The project includes a News page that connects to an RSS feed related to Yu-Gi-Oh news.
+The News page consumes an external RSS feed to display the latest Yu-Gi-Oh related updates.
 
-This fulfills the RSS requirement of the assignment.
+## Firebase
 
+The project uses Firebase Firestore to store and manage cards.
+New cards added in the Home page are saved in the database and can be used in the Deck builder.
 
 ## Important
 

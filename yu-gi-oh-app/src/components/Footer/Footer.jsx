@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="social-icons">
 
   <a 
-    href="https://facebook.com/TUUSUARIO" 
+    href="https://www.facebook.com/?locale=es_ES" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -21,7 +21,7 @@ const Footer = () => {
   </a>
 
   <a 
-    href="https://twitter.com/TUUSUARIO" 
+    href="https://x.com/?lang=es" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -29,7 +29,7 @@ const Footer = () => {
   </a>
 
   <a 
-    href="https://instagram.com/TUUSUARIO" 
+    href="https://www.instagram.com/" 
     target="_blank" 
     rel="noopener noreferrer"
   >
