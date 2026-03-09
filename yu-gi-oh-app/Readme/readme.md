@@ -75,23 +75,16 @@ This page demonstrates:
 - Vite: https://vitejs.dev/
 
 ---
- Features
+ ## Features
 
- Search cards by name
-
- View a collection of cards
-
- Add new cards to the database
-
- Update existing cards
-
- Delete cards
-
- Build your own deck (max 3 copies per card)
-
- RSS News page with Yu-Gi-Oh updates
-
- Built using React components
+ - Search cards by name
+ - View a collection of cards
+ - Add new cards to the database
+ - Update existing cards
+ - Delete cards
+ - Build your own deck (max 3 copies per card)
+ - RSS News page with Yu-Gi-Oh updates
+ - Built using React components
 ---
 
 ## Resources and Tutorials
@@ -131,17 +124,12 @@ This fulfills the RSS requirement of the assignment.
 
 ## Important
 
-To run the project correctly, you must navigate into the project folder:
-
-cd yu-gi-oh-app
-
-Then install dependencies:
-
-npm install
-
-Then start the development server:
-
-npm run dev
+- To run the project correctly, you must navigate into the project folder:
+- cd yu-gi-oh-app
+- Then install dependencies:
+- npm install
+- Then start the development server:
+- npm run dev
 
 ## Project Structure
 
