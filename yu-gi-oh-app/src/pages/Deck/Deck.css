@@ -73,6 +73,26 @@
 }
 
 
+/*filtro*/
+.filter-buttons{
+  margin: 15px 0;
+  text-align: center;
+}
+
+.filter-buttons button{
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover{
+  background-color: #666;
+}
+
 /*  Responsive */
 @media (max-width: 768px) {
   .card {

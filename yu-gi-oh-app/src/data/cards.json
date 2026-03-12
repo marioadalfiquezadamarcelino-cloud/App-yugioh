@@ -2,7 +2,7 @@
     {
         "id":1,
         "name": "Blue-eyes white Dragon",
-         "type": "Dragon/Normal",
+         "type": "Dragon",
          "attack":3000,
          "defense":2500,
          "image":"/images/blue-eyes.jpg"
@@ -11,7 +11,7 @@
     {
         "id":2,
         "name":"Dark Magician",
-        "type":"Spellcaster/Normal",
+        "type":"Spellcaster",
         "attack":2500,
         "defense":2100,
         "image": "/images/dark-magician.jpg"
@@ -21,7 +21,7 @@
     {
         "id":3,
         "name":"Red-eyes Black Dragon",
-        "type":"Dragon/Normal",
+        "type":"Dragon",
         "attack":2400,
         "defense":2000,
         "image": "/images/red-eyes.jpg"
@@ -31,7 +31,7 @@
     {
         "id":4,
         "name":"Summoned Skull",
-        "type" :"Fiend/Normal",
+        "type" :"Fiend",
         "attack":2500,
         "defense":1200,
         "image": "/images/summoned-skull.jpg"
@@ -59,8 +59,8 @@
     {
         "id":7,
         "name":"Raigeki",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/raigeki.jpg"
         
     },
@@ -68,16 +68,16 @@
     {
         "id":8,
         "name":"Myrro Force",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/merror-force.jpg"
     },
 
     {
         "id":9,
         "name":"Magic Cylender",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/magic-cylender.jpg"
 
     },
@@ -132,7 +132,7 @@
     {
         "id":15,
         "name":"El Selle de Oricalcos",
-        "type":"Magic",
+        "type":"Spell",
         "effect":"Espacial Campo",
         "image":"/images/el-sello-de-oricalcos.jpg"
 
@@ -141,7 +141,7 @@
     {
         "id":16,
         "name":"Espadas de Luz Ocultadora",
-        "type":"Magic",
+        "type":"Spell",
         "effect":"Especial Continuo",
         "image":"/images/espadas-de-luz-ocultadora.jpg"
 
@@ -150,8 +150,8 @@
     {
         "id":17,
         "name":"Agujero Oscuro",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/agujero-oscuro.jpg"
     },
 
@@ -187,16 +187,16 @@
     {
         "id":21,
         "name":"Dark Mirror Force",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/dark-mirror-foce.jpg"
     },
 
     {
         "id":22,
         "name":"Polymerization",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/polymerization.jpg"
 
     },
@@ -204,24 +204,24 @@
     {
         "id":23,
         "name":"Monstruo Renacido",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/monstruo-renacido.jpg"
     },
     
     {
         "id":24,
         "name":"Mayor Polimerización",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/mayor_polimerizacion.jpg"
     },
 
     {
         "id":25,
         "name":"Fuerza de Espejo Arrolladora",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/fuerza-de-espejo-arrolladora.jpg"
 
     },
@@ -229,7 +229,7 @@
     {
         "id":26,
         "name":"Card Destruction",
-        "type":"Magic",
+        "type":"Spell",
         "effect":"Especial",
         "image":"/images/card-destruction.jpg"
 
@@ -265,16 +265,16 @@
     {
         "id":30,
         "name":"Desfusión",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/desfusion.jpg"
     },
 
     {
         "id":31,
         "name":"Megamorfo",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/megamorfo.jpg"
     },
 
@@ -300,8 +300,8 @@
     {
         "id":34,
         "name":"Siete Herramientas Del Bandido",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/siete.jpg"
     },
 
@@ -317,8 +317,8 @@
     {
         "id":36,
         "name":"Dark Renewal",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/dark.jpg"
     },
 
@@ -334,16 +334,16 @@
     {
         "id":38,
         "name":"Gravity Bind",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/gravity_bind.jpg"
     },
 
     {
         "id":39,
         "name":"Escudo y Espada",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/escudo_espada.jpg"
     },
 
@@ -360,8 +360,8 @@
     {
         "id":41,
         "name":"Chivos Expiatorios",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/chivos.jpg"
 
     },
@@ -369,8 +369,8 @@
     {
         "id":42,
         "name":"Controlador De Enemigos",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/controlador.jpg"
     },
 
@@ -405,7 +405,7 @@
     {
       "id":46,
       "name":"Mundo De Caracaturas",
-      "type":"Magic",
+      "type":"Spell",
       "effect":"Espacial Campo",
       "image":"/images/mundo_toon.jpg"
     },
@@ -413,8 +413,8 @@
     {
         "id":47,
         "name":"Michizure",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/michizure.jpg"
     },
 
@@ -430,8 +430,8 @@
     {
         "id":49,
         "name":"Perdición Silenciosa",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/perdicion.jpg"
     },
 
@@ -447,7 +447,7 @@
     {
         "id":51,
         "name":"Poder del Mago",
-        "type":"Magic",
+        "type":"Spell",
         "effect":"Especial Continuo",
         "image":"/images/poder.jpg"
     },
@@ -473,8 +473,8 @@
     {
         "id":54,
         "name":"Soldado De Apoyo",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/soldado.jpg"
     },
 
@@ -490,8 +490,8 @@
     {
         "id":56,
         "name":"Polvo De Pluma De Arpía",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/plumero.jpg"
     },
 
@@ -508,8 +508,8 @@
       
         "id":58,
         "name":"Ultimate Fusion",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/ultimate.jpg"
     },
 
@@ -534,8 +534,8 @@
     {
         "id":61,
         "name":"Magical Hats",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/magical_hats.jpg"
     },
     
@@ -560,8 +560,8 @@
     {
        "id":64,
         "name":"Invokación",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/invokación.jpg" 
     },
 
@@ -595,8 +595,8 @@
     {
         "id":68,
         "name":"Jucio Solemne",
-        "type":"Tramp",
-        "effect":"Nolmal",
+        "type":"Trap",
+        "effect":"",
         "image":"/images/juicio.jpg"
 
     },
@@ -651,7 +651,7 @@
     {
         "id":74,
         "name":"Cadena Demoniaca",
-        "type":"Tramp",
+        "type":"Trap",
         "effect":"Especial Continuo",
         "image":"/images/cadena.jpg"
     },
@@ -794,8 +794,8 @@
     {
         "id":90,
         "name":"Resonator Call",
-        "type":"Magic",
-        "effect":"Nolmal",
+        "type":"Spell",
+        "effect":"",
         "image":"/images/resonator.jpg"
     },
 
@@ -846,7 +846,7 @@
     {
         "id":96,
         "name":"Crimson Gaia",
-        "type":"Magic",
+        "type":"Spell",
         "effect":"Especial Continuo",
         "image":"/images/crimson-gaia.jpg"
     }

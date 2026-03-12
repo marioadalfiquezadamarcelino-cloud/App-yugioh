@@ -7,9 +7,9 @@ import "./Deck.css";
 
 const Deck = () => {
 
- // Hacer click en cartas
+  // Hacer click en cartas
 
- const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] = useState(null);
 
   // cartas desde Firebase
   const [cards, setCards] = useState([]);
@@ -20,13 +20,18 @@ const Deck = () => {
   // buscador
   const [searchTerm, setSearchTerm] = useState("");
 
+  // filtro
+  const [filterType, setFilterType] = useState("All");
+
   // unir JSON + Firebase
   const allCards = [...cardsData, ...cards];
 
   // filtrar cartas
-  const filteredCards = allCards.filter(card =>
-    card.name?.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredCards = allCards.filter(card => {
+    const matchesSearch = card.name?.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesType = filterType === "All" || card.type === filterType;
+    return matchesSearch && matchesType;
+  });
 
   // leer cartas desde Firestore
   useEffect(() => {
@@ -80,6 +85,22 @@ const Deck = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
 
+      <div className="filter-buttons">
+
+        <button onClick={() => setFilterType("All")}> All</button>
+         <button onClick={() => setFilterType("Dragon")}> Dragon</button>
+         <button onClick={() => setFilterType("Dragon/Effect")}>Dragon/Effect</button>
+         <button onClick={() => setFilterType("Dragon/Xyz/Effect")}>Dragon/Xyz/Effect</button>
+         <button onClick={() => setFilterType("Dragon/Fusion/Effect")}>Dragon/Fusion/Effect</button>
+         <button onClick={() => setFilterType("Spell Normal ")}>Spell Normal</button>
+         <button onClick={() => setFilterType("Spell Fied ")}>Spell Fied</button>
+         <button onClick={() => setFilterType("Spell Quick-Play ")}>Spell Quick-Play</button>
+         <button onClick={() => setFilterType("Trap Normal")}>Trap</button>
+         <button onClick={() => setFilterType("Trap Continuous")}>Trap continuoues</button>
+
+      </div>
+
+
       <h3>Available Cards</h3>
 
       <div className="cards-container">
@@ -105,7 +126,7 @@ const Deck = () => {
           </div>
         </div>
       )}
-      
+
       <h3>Your Deck ({deck.length})</h3>
 
       <div className="cards-container">
