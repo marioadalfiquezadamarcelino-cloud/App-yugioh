@@ -7,6 +7,10 @@ import "./Deck.css";
 
 const Deck = () => {
 
+ // Hacer click en cartas
+
+ const [selectedCard, setSelectedCard] = useState(null);
+
   // cartas desde Firebase
   const [cards, setCards] = useState([]);
 
@@ -84,10 +88,24 @@ const Deck = () => {
             key={card.id}
             {...card}
             onAdd={() => addToDeck(card)}
+            onClick={() => setSelectedCard(card)}
           />
         ))}
       </div>
 
+
+      {selectedCard && (
+        <div className="card-modal" onClick={() => setSelectedCard(null)}>
+          <div className="card-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedCard.image} alt={selectedCard.name} />
+            <h2>{selectedCard.name}</h2>
+            <p>Type: {selectedCard.type}</p>
+            <p>ATK: {selectedCard.attack}</p>
+            <p>DEF: {selectedCard.defense}</p>
+          </div>
+        </div>
+      )}
+      
       <h3>Your Deck ({deck.length})</h3>
 
       <div className="cards-container">
