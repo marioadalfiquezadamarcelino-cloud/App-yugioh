@@ -1,63 +1,61 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./News.css";
 
 const News = () => {
-
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https://ygorganization.com/feed/"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.items) {
-          setArticles(data.items);
-        }
-      })
-      .catch((error) => {
-        console.error("RSS error:", error);
-      });
-  }, []);
-
   return (
     <div className="news">
 
-      <h2>Yu-Gi-Oh News</h2>
+      <h2>Yu-Gi-Oh App News</h2>
 
       <p className="news-description">
-        Latest updates from the Yu-Gi-Oh community.
-        This page reads an RSS feed and displays recent articles.
+        This section provides updates about the Yu-Gi-OhYu-Gi-Oh card
+        application. You can subscribe to our RSS feed to stay updated
+        with the latest changes and features.
       </p>
 
-      <iframe 
-      title="Yu-Gi-Oh RSS" 
-      src="https://www.yugioh-card.com/en/feed/" 
-      className="rss-frame">
-         </iframe>
+      <div className="rss-links">
+        <a href="/rss/news.xml" target="_blank">
+          View RSS Feed
+        </a>
+      </div>
 
       <div className="news-container">
-        {articles.length > 0 ? (
-          articles.slice(0, 6).map((article, index) => (
-            <div key={index} className="news-card">
 
-              <h3>{article.title}</h3>
+        <div className="news-card">
+          <h3>New Cards Added</h3>
+          <p>Several Yu-Gi-Oh cards have been added to the collection.</p>
+          
+           <a href="/rss/deck.xml"> New Cards Added</a> 
+        
+        </div>
 
-              <p>{new Date(article.pubDate).toLocaleDateString()}</p>
 
-              <a
-                href={article.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read more
-              </a>
+        <div className="news-card">
+          <h3>Deck Builder Feature</h3>
+          <p>You can now create your own deck using the deck builder.</p>
+       
+        <a href="/rss/update.xml">Update</a>
+          
+        </div>
 
-            </div>
-          ))
-        ) : (
-          <p>Loading news...</p>
-        )}
+        <div className="news-card">
+          <h3>Firebase Integration</h3>
+          <p>The application now stores cards using Firebase Firestore.</p>
+        
+           <a href="/rss/cards.xml"> New Cards Added</a>
+
+        
+        </div>
+        <div className="news-card">
+          <h3>Firebase Integration</h3>
+          <p>The application now stores cards using Firebase Firestore.</p>
+        
+           <a href="/rss/community.xml"> community</a>
+
+        </div>
+
+        
+
       </div>
 
     </div>

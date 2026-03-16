@@ -43,6 +43,18 @@ const Footer = () => {
   >
     <FaGithub size={25} />
   </a>
+  <div className="rss-link">
+  <h3>Our RSS Feed</h3>
+
+  <p>
+    Subscribe to our RSS feed to receive updates about the MangaGame
+    Yu-Gi-Oh card application.
+  </p>
+
+  <a href="/rss/news.xml" target="_blank">
+    View RSS Feed
+  </a>
+</div>
 
 </div>
     </footer>

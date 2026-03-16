@@ -63,6 +63,8 @@ const Home = () => {
     card.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+
+
   return (
 
     <div className="home">
@@ -89,6 +91,7 @@ const Home = () => {
         alt="Logo"
         className="home-logo"
       />
+
 
 
       {/* FORM */}
@@ -132,7 +135,6 @@ const Home = () => {
             setNewCard({ ...newCard, image: e.target.value })
           }
         />
-
 
         <button onClick={addCard}>Add Card</button>
       </div>

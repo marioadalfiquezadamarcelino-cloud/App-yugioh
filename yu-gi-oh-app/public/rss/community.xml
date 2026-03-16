@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+
+<channel>
+
+<title>MangaGame App Updates</title>
+<link>http://localhost:5173</link>
+<description>Technical improvements and new features</description>
+<language>en-us</language>
+
+<item>
+<title>Firebase Firestore Integration</title>
+<link>http://localhost:5173/home</link>
+<description>The app now uses Firebase Firestore to store cards.</description>
+<author>Development Team</author>
+<category>Technology</category>
+<pubDate>Fri, 05 Jul 2024 11:00:00 GMT</pubDate>
+<guid>update1</guid>
+</item>
+
+<item>
+<title>Search Feature Improved</title>
+<link>http://localhost:5173/deck</link>
+<description>The card search system is now faster and more accurate.</description>
+<author>Development Team</author>
+<category>Feature</category>
+<pubDate>Sat, 06 Jul 2024 13:00:00 GMT</pubDate>
+<guid>update2</guid>
+</item>
+
+</channel>
+</rss>

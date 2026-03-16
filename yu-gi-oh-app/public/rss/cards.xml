@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+
+<channel>
+
+<title>Yu-Gi-Oh Cards Updates</title>
+<link>http://localhost:5173/home</link>
+<description>Latest cards added to the Yu-Gi-Ohcard database</description>
+<language>en-us</language>
+
+<item>
+<title>Dark Magician Added</title>
+<link>http://localhost:5173/home</link>
+<description>The legendary Dark Magician card is now available.</description>
+<author>Yu-Gi-OhTeam</author>
+<category>Monster</category>
+<pubDate>Wed, 03 Jul 2024 09:00:00 GMT</pubDate>
+<guid>card1</guid>
+</item>
+
+<item>
+<title>Blue-Eyes White Dragon Added</title>
+<link>http://localhost:5173/home</link>
+<description>The powerful Blue-Eyes White Dragon joins the collection.</description>
+<author>Yu-Gi-OhTeam</author>
+<category>Monster</category>
+<pubDate>Thu, 04 Jul 2024 10:00:00 GMT</pubDate>
+<guid>card2</guid>
+</item>
+
+</channel>
+</rss>

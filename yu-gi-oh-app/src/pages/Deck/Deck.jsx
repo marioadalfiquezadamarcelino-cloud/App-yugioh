@@ -88,14 +88,17 @@ const Deck = () => {
       <div className="filter-buttons">
 
         <button onClick={() => setFilterType("All")}> All</button>
-         <button onClick={() => setFilterType("Dragon")}> Dragon</button>
+         <button onClick={() => setFilterType("Spell Normal")}>Spell Normal</button>
+         <button onClick={() => setFilterType("Spell Fied")}>Spell Fied</button>
+         <button onClick={() => setFilterType("Spell Quick-Play")}>Spell Quick-Play</button>
+         <button onClick={() => setFilterType("Fiend/Effect")}>Fiend/Effect</button>
+         <button onClick={() => setFilterType("Warrior/Effect")}>Warrior/Effect</button>
+         <button onClick={() => setFilterType("Dragon/Syncroll/Effect")}>Dragon/Syncroll/Effect</button>
+         <button onClick={() => setFilterType("Warrior/XYZ/Effect")}>Warrior/XYZ/Effect</button>
          <button onClick={() => setFilterType("Dragon/Effect")}>Dragon/Effect</button>
-         <button onClick={() => setFilterType("Dragon/Xyz/Effect")}>Dragon/Xyz/Effect</button>
          <button onClick={() => setFilterType("Dragon/Fusion/Effect")}>Dragon/Fusion/Effect</button>
-         <button onClick={() => setFilterType("Spell Normal ")}>Spell Normal</button>
-         <button onClick={() => setFilterType("Spell Fied ")}>Spell Fied</button>
-         <button onClick={() => setFilterType("Spell Quick-Play ")}>Spell Quick-Play</button>
-         <button onClick={() => setFilterType("Trap Normal")}>Trap</button>
+         <button onClick={() => setFilterType("Bestia divina/Effect")}>Bestia divina/Effect</button>
+         <button onClick={() => setFilterType("Trap Normal")}>Trap Normal</button>
          <button onClick={() => setFilterType("Trap Continuous")}>Trap continuoues</button>
 
       </div>

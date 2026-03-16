@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+
+<channel>
+
+<title>Yu-Gi-OhYu-Gi-Oh App News</title>
+<link>http://localhost:5173</link>
+<description>Latest updates from the Yu-Gi-Oh card collection application</description>
+<language>en-us</language>
+<managingEditor>mangagame@app.com</managingEditor>
+<lastBuildDate>Mon, 01 Jul 2024 10:00:00 GMT</lastBuildDate>
+
+<item>
+<title>New Cards Added</title>
+<link>http://localhost:5173/home</link>
+<description>Several Yu-Gi-Oh cards have been added to the database.</description>
+<author>Yu-Gi-OhTeam</author>
+<category>Cards</category>
+<pubDate>Mon, 01 Jul 2024 10:00:00 GMT</pubDate>
+<guid>news1</guid>
+</item>
+
+<item>
+<title>Deck Builder Feature</title>
+<link>http://localhost:5173/deck</link>
+<description>You can now build your own custom deck.</description>
+<author>Yu-Gi-OhTeam</author>
+<category>Feature</category>
+<pubDate>Tue, 02 Jul 2024 12:00:00 GMT</pubDate>
+<guid>news2</guid>
+</item>
+
+</channel>
+</rss>

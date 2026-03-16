@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+
+<title>Deck Builder Updates</title>
+<link>http://localhost:5173/deck</link>
+<description>Information about deck building features</description>
+
+<item>
+<title>Create your own deck</title>
+<link>http://localhost:5173/deck</link>
+<description>Players can build custom decks with up to 40 cards.</description>
+<pubDate>Fri, 05 Jul 2024 09:00:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Add cards to deck</title>
+<link>http://localhost:5173/deck</link>
+<description>Click on cards to add them to your deck.</description>
+<pubDate>Sat, 06 Jul 2024 09:00:00 GMT</pubDate>
+</item>
+
+</channel>
+</rss>
