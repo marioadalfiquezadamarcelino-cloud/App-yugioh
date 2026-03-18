@@ -4,32 +4,47 @@
 
 <channel>
 
-<title>Yu-Gi-OhYu-Gi-Oh App News</title>
+<title>MangaGame Yu-Gi-Oh App</title>
 <link>http://localhost:5173</link>
-<description>Latest updates from the Yu-Gi-Oh card collection application</description>
+<description>News and updates from the Yu-Gi-Oh card collection application</description>
 <language>en-us</language>
-<managingEditor>mangagame@app.com</managingEditor>
-<lastBuildDate>Mon, 01 Jul 2024 10:00:00 GMT</lastBuildDate>
 
 <item>
 <title>New Cards Added</title>
 <link>http://localhost:5173/home</link>
-<description>Several Yu-Gi-Oh cards have been added to the database.</description>
-<author>Yu-Gi-OhTeam</author>
+<description>Several new Yu-Gi-Oh cards have been added to the database.</description>
 <category>Cards</category>
+<author>MangaGame Team</author>
 <pubDate>Mon, 01 Jul 2024 10:00:00 GMT</pubDate>
-<guid>news1</guid>
 </item>
 
 <item>
 <title>Deck Builder Feature</title>
 <link>http://localhost:5173/deck</link>
-<description>You can now build your own custom deck.</description>
-<author>Yu-Gi-OhTeam</author>
+<description>Players can now build their own custom decks.</description>
 <category>Feature</category>
+<author>MangaGame Team</author>
 <pubDate>Tue, 02 Jul 2024 12:00:00 GMT</pubDate>
-<guid>news2</guid>
+</item>
+
+<item>
+<title>Firebase Integration</title>
+<link>http://localhost:5173/home</link>
+<description>The application now stores cards using Firebase Firestore.</description>
+<category>Technology</category>
+<author>MangaGame Team</author>
+<pubDate>Wed, 03 Jul 2024 15:00:00 GMT</pubDate>
+</item>
+
+<item>
+<title>Responsive Design Improvements</title>
+<link>http://localhost:5173</link>
+<description>The interface now works better on mobile devices.</description>
+<category>Design</category>
+<author>MangaGame Team</author>
+<pubDate>Thu, 04 Jul 2024 09:30:00 GMT</pubDate>
 </item>
 
 </channel>
+
 </rss>

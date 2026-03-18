@@ -182,6 +182,7 @@ New cards added in the Home page are saved in the database and can be used in th
 - npm run dev
 
 ## Project Structure
+
 yu-gi-oh-app/
 |
 ├─public/
@@ -209,3 +210,4 @@ src/
 │  └─ firabase.js
 ├─ App.jsx
 └─ main.jsx
+
