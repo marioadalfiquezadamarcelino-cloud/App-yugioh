@@ -1,0 +1,854 @@
+[
+    {
+        "id":1,
+        "name": "Blue-eyes white Dragon",
+         "type": "Dragon",
+         "attack":3000,
+         "defense":2500,
+         "image":"/images/blue-eyes.jpg"
+    },
+
+    {
+        "id":2,
+        "name":"Dark Magician",
+        "type":"Spellcaster",
+        "attack":2500,
+        "defense":2100,
+        "image": "/images/dark-magician.jpg"
+
+    },
+
+    {
+        "id":3,
+        "name":"Red-eyes Black Dragon",
+        "type":"Dragon",
+        "attack":2400,
+        "defense":2000,
+        "image": "/images/red-eyes.jpg"
+
+    },
+
+    {
+        "id":4,
+        "name":"Summoned Skull",
+        "type" :"Fiend",
+        "attack":2500,
+        "defense":1200,
+        "image": "/images/summoned-skull.jpg"
+    },
+ 
+    {
+        "id":5,
+        "name":"Dragon Polvo de Estrellas",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":2500,
+        "defense":2000,
+        "image":"/images/stardus-dragon.jpg"
+    },
+    
+    {
+        "id":6,
+        "name":"Dragon de las Rosas Negras",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":2400,
+        "defense":1800,
+        "image":"/images/dragon-black-roses.jpg"
+
+    },
+
+    {
+        "id":7,
+        "name":"Raigeki",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/raigeki.jpg"
+        
+    },
+
+    {
+        "id":8,
+        "name":"Mirror Force",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/merror-force.jpg"
+    },
+
+    {
+        "id":9,
+        "name":"Magic Cylinder",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/magic-cylender.jpg"
+
+    },
+
+    {
+        "id":10,
+        "name":"Obelisk the Tormentor",
+        "type":"Bestia divina/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/obelsco-el-atormentador.jpg"
+
+    },
+
+    {
+        "id":11,
+        "name":"Blue-eyes Chaos Max Dragon",
+        "type":"Dragon/Ritual/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/blue-eyes-chaos-max-dragon.jpg"
+    },
+
+    {
+        "id":12,
+        "name":"Dragón Emperador Del Caos-Enviado del FIN",
+        "type":"Dragon/Effect",
+        "attack":3000,
+        "defense":2500,
+        "image":"/images/dragon-emperador-del-caos-enviado-del-fin.jpg"
+
+    },
+
+    {
+        "id":13,
+        "name":"Dragón alado de RA",
+        "type":"Bestia divina/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/el-dragón-alado-de-ra.jpg"
+    },
+
+    {
+        "id":14,
+        "name":"Elemental Hero Neos Beyond",
+        "type":"Warrior/Fusion/Effect",
+        "attack":2500,
+        "defense":2000,
+        "image":"/images/elemental-hero-neos-beyond.jpg"
+    },
+
+    {
+        "id":15,
+        "name":"El Selle de Oricalcos",
+        "type":"Spell Fied",
+        "effect":"Espacial Campo",
+        "image":"/images/el-sello-de-oricalcos.jpg"
+
+    },
+
+    {
+        "id":16,
+        "name":"Espadas de Luz Ocultadora",
+        "type":"Spell continuous",
+        "effect":"Especial Continuo",
+        "image":"/images/espadas-de-luz-ocultadora.jpg"
+
+    },
+
+    {
+        "id":17,
+        "name":"Agujero Oscuro",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/agujero-oscuro.jpg"
+    },
+
+    {
+        "id":18,
+        "name":"Dark Magician of Chaos",
+        "type":"Spellcaster/Effect",
+        "attack":2800,
+        "defense":2600,
+        "image":"/images/dark-magician-of-chaos.jpg"
+
+    },
+
+    {
+        "id":19,
+        "name":"King's Kniht",
+        "type":"Warrior/Effect",
+        "attack":1600,
+        "defense":1400,
+        "image":"/images/kings-knight.jpg"
+
+    },
+
+    {
+        "id":20,
+        "name":"Divinity Magician Of The Gods",
+        "type":"Spellcaster/Fusion/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/divinity-magician-of-the-gods.jpg"
+    },
+
+    {
+        "id":21,
+        "name":"Dark Mirror Force",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/dark-mirror-foce.jpg"
+    },
+
+    {
+        "id":22,
+        "name":"Polymerization",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/polymerization.jpg"
+
+    },
+
+    {
+        "id":23,
+        "name":"Monstruo Renacido",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/monstruo-renacido.jpg"
+    },
+    
+    {
+        "id":24,
+        "name":"Mayor Polimerización",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/mayor_polimerizacion.jpg"
+    },
+
+    {
+        "id":25,
+        "name":"Fuerza de Espejo Arrolladora",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/fuerza-de-espejo-arrolladora.jpg"
+
+    },
+
+    {
+        "id":26,
+        "name":"Card Destruction",
+        "type":"Spell Normal",
+        "effect":"Especial",
+        "image":"/images/card-destruction.jpg"
+
+    },
+
+    {
+        "id":27,
+        "name":"Hamon, Señor Del Trueno Golpeador",
+        "type":"Thunder/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/hamon.jpg"
+    },
+
+    {
+        "id":28,
+        "name":"El Dragón Alado De Ra-Modo Esfera",
+        "type":"Bestia divina/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/huevo_ra.jpg"
+    },
+
+     {
+        "id":29,
+        "name":"Dragón Alado de RA",
+        "type":"Bestia divina/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/ra1.jpg"
+    },
+
+    {
+        "id":30,
+        "name":"Desfusión",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/desfusion.jpg"
+    },
+
+    {
+        "id":31,
+        "name":"Megamorfo",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/megamorfo.jpg"
+    },
+
+    {
+        "id":32,
+        "name":"El Dragón Alado De Ra-Fenix",
+        "type":"Bestia divina/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/ra-fenix.jpg"
+    },
+
+    {
+        "id":33,
+        "name":"Raviel, Lord Of Phantasms",
+        "type":"Fiend/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/raviel.jpg"
+    },
+   
+
+    {
+        "id":34,
+        "name":"Siete Herramientas Del Bandido",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/siete.jpg"
+    },
+
+    {
+        "id":35,
+        "name":"Slifer The Sky Dragon",
+        "type":"Bestia divina/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/slifer.jpg"
+    },
+
+    {
+        "id":36,
+        "name":"Dark Renewal",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/dark.jpg"
+    },
+
+    {
+        "id":37,
+        "name":"Uria El Señor De Las Llamas Abrasadoras",
+        "type":"Piro/Effect",
+        "attack":0,
+        "defense":0,
+        "image":"/images/uria.jpg"
+    },
+
+    {
+        "id":38,
+        "name":"Gravity Bind",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/gravity_bind.jpg"
+    },
+
+    {
+        "id":39,
+        "name":"Escudo y Espada",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/escudo_espada.jpg"
+    },
+
+    {
+        "id":40,
+        "name":"Slifer IL Drago Del Cielo",
+        "type":"Bestia divina/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/slifer1.jpg"
+        
+    },
+
+    {
+        "id":41,
+        "name":"Chivos Expiatorios",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/chivos.jpg"
+
+    },
+
+    {
+        "id":42,
+        "name":"Controlador De Enemigos",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/controlador.jpg"
+    },
+
+    {
+        "id":43,
+        "name":"Obelsco El Atormentador Toon",
+        "type":"Bestia divina/Toon/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/obelisco_toon.jpg"
+
+    },
+
+    {
+        "id":44,
+        "name":"Numero F0: Utopic Future Zexal",
+        "type":"Warrior/XYZ/Effect",
+        "attack":0,
+        "defense":0,
+        "image":"/images/numero_f0.jpg"
+    },
+
+    {
+      "id":45,
+      "name":"Neo Blue-eyes Ultimate Dragon",
+      "type":"Dragon/Fusion/Effect",
+      "attack":4000,
+      "defense":4000,
+      "image":"/images/neo-blue_eyes.jpg"
+    },
+
+    {
+      "id":46,
+      "name":"Mundo De Caracaturas",
+      "type":"Spell Normal",
+      "effect":"Espacial Campo",
+      "image":"/images/mundo_toon.jpg"
+    },
+
+    {
+        "id":47,
+        "name":"Michizure",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/michizure.jpg"
+    },
+
+    {
+      "id":48,
+      "name":"Number 107: Galaxy-Eyes Tachyon Dragon",
+      "type":"Dragon/XYZ/Effect",
+      "attack":3000,
+      "defense":2500,
+      "image":"/images/numero_107.jpg"
+    },
+
+    {
+        "id":49,
+        "name":"Perdición Silenciosa",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/perdicion.jpg"
+    },
+
+    {
+        "id":50,
+        "name":"Toon Dragon Of Ra",
+        "type":"Bestia divina/Toon/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/ra_toon.jpg"
+    },
+
+    {
+        "id":51,
+        "name":"Poder del Mago",
+        "type":"Spell Normal",
+        "effect":"Especial Continuo",
+        "image":"/images/poder.jpg"
+    },
+
+    {
+        "id":52,
+        "name":"Red Supernova Dragon",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/red_nova.jpg"
+    },
+
+    {
+        "id":53,
+        "name":"Azure_Eyes Silver Dragon",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":2500,
+        "defense":3000,
+        "image":"/images/silver.jpg"
+    },
+
+    {
+        "id":54,
+        "name":"Soldado De Apoyo",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/soldado.jpg"
+    },
+
+    {
+        "id":55,
+        "name":"Toon Slifer The Sky Dragon",
+        "type":"Bestia divina/Toon/Effect",
+        "attack":"???",
+        "defense":"???",
+        "image":"/images/slifer_toon.jpg"
+    },
+
+    {
+        "id":56,
+        "name":"Polvo De Pluma De Arpía",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/plumero.jpg"
+    },
+
+    {
+        "id":57,
+        "name":"Starving Venom Fusion Dragon",
+        "type":"Dragon/Fusion/Effect",
+        "attack":2800,
+        "defense":2000,
+        "image":"/images/starving.jpg"
+    },
+
+    {
+      
+        "id":58,
+        "name":"Ultimate Fusion",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/ultimate.jpg"
+    },
+
+    {
+        "id":59,
+        "name":"Starving Venom Wing Dragon",
+        "type":"Dragon/Fusion/Pendulum/Effect",
+        "attack":3300,
+        "defense":2500,
+        "image":"/images/wing_dragon.jpg"
+    },
+
+    {
+        "id":60,
+        "name":"Dragón Estelar Majestuoso Fugaz",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":4000,
+        "defense":3300,
+        "image":"/images/majestuoso.jpg"
+    },
+
+    {
+        "id":61,
+        "name":"Magical Hats",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/magical_hats.jpg"
+    },
+    
+    {
+        "id":62,
+        "name":"Magia Amo Del Dragón",
+        "type":"Dragon/Fusion/Effect",
+        "attack":5000,
+        "defense":4000,
+        "image":"/images/magia_amo.jpg"
+    },
+
+    {
+        "id":63,
+        "name":"Legendary Dragon Of White",
+        "type":"Dragon/XYZ/Effect",
+        "attack":3000,
+        "defense":2500,
+        "image":"/images/legendary.jpg"
+    },
+
+    {
+       "id":64,
+        "name":"Invokación",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/invokación.jpg" 
+    },
+
+    {
+        "id":65,
+        "name":"Gran Escudo Gardna",
+        "type":"Warrior/Effect",
+        "attack":100,
+        "defense":2600,
+        "image":"/images/gran_escudo.jpg"
+    },
+
+    {
+        "id":66,
+        "name":"Dragón Espiritual Defenitivo De ojos Azules",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3500,
+        "defense":4000,
+        "image":"/images/espiritual_definitivo.jpg"
+    },
+
+    {
+        "id":67,
+        "name":"Dragón Espiritual de Ojos Azules",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":2500,
+        "defense":3000,
+        "image":"/images/espiritual.jpg"
+    },
+
+    {
+        "id":68,
+        "name":"Jucio Solemne",
+        "type":"Trap Normal",
+        "effect":"",
+        "image":"/images/juicio.jpg"
+
+    },
+
+    {
+        "id":69,
+        "name":"Mago Del Tiempo",
+        "type":"Spellcaster/Effect",
+        "attack":500,
+        "defense":400,
+        "image":"/images/mago_tiempo.jpg"
+
+    },
+
+    {
+        "id":70,
+        "name":"The Crimson King",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3000,
+        "defense":2500,
+        "image":"/images/crimson.jpg"
+
+    },
+
+    {
+        "id":71,
+        "name":"Crystal Clear Wing Over Sinchron Dragon",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3500,
+        "defense":3000,
+        "image":"/images/crystal_clear.jpg"
+    },
+
+    {
+        "id":72,
+         "name":"Red Nava Dragon/Assault Mode",
+         "type":"Dragon/Effect",
+         "attack":4000,
+         "defense":3500,
+         "image":"/images/assult_mode.jpg"
+    },
+
+    {
+        "id":73,
+        "name":"Buster Blader",
+        "type":"Warrior/Effect",
+        "attack":2600,
+        "defense":2300,
+        "image":"/images/buster.jpg"
+    },
+
+    {
+        "id":74,
+        "name":"Cadena Demoniaca",
+        "type":"Trap Continuous",
+        "effect":"Especial Continuo",
+        "image":"/images/cadena.jpg"
+    },
+
+    {
+        "id":75,
+        "name":"Cicaluz Dragón RAJO Archidemonio",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3000,
+        "defense":2500,
+        "image":"/images/cicaluz.jpg"
+    },
+
+    {
+        "id":76,
+        "name":"Dragón Archidemonio Cicatrizado",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3000,
+        "defense":2500,
+        "image":"/images/cicatrizado.jpg"
+    },
+
+    {
+        "id":77,
+        "name":"Crimson Resonator",
+        "type":"Fiend/Tuner/Effect",
+        "attack":800,
+        "defense":300,
+        "image":"/images/crimson_resonator.jpg"
+
+    },
+
+    {
+        "id":78,
+        "name":"Cyberse Magician",
+        "type":"Cyberse/Ritual/Effect",
+        "attack":2500,
+        "defense":2000,
+        "image":"/images/cyberse.jpg"
+    },
+
+    {
+        "id":79,
+        "name":"Decode Talker Heatsoul",
+        "type":"Cyberse/Link/Effect",
+        "attack":2300,
+        "image":"/images/decode.jpg"
+    },
+
+    {
+        "id":80,
+        "name":"Decodificador Hablador",
+        "type":"Cyberse/Link/Effect",
+        "attack":2300,
+        "image":"/images/decodificador.jpg"
+    },
+
+    {
+        "id":81,
+        "name":"Dragón Rojo Archidemonio",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3000,
+        "defense":2000,
+        "image":"/images/archidemo.jpg"
+    },
+
+    {
+        "id":82,
+        "name":"Dragón Sicro Ala Cristalina",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3000,
+        "defense":2500,
+        "image":"/images/ala_cristal.jpg"
+    },
+
+    {
+        "id":83,
+        "name":"Ardiente Dragón Rojo Archidemonio De La Bajeza",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3500,
+        "defense":3000,
+        "image":"/images/ardiente.jpg"
+    },
+
+    {
+        "id":84,
+        "name":"Mad Archifiend",
+        "type":"Fiend/Effect",
+        "attack":1800,
+        "defense":0,
+        "image":"/images/mad.jpg"
+
+    },
+
+    {
+        "id":85,
+        "name":"Hot Red Dragon Archfiend Abyss",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":3200,
+        "defense":2500,
+        "image":"/images/hot.jpg"
+    },
+
+    {
+        "id":86,
+        "name":"Mago ContemplaEstrella",
+        "type":"Spellcaster/Pendulum/Effect",
+        "attack":1200,
+        "defense":2400,
+        "image":"/images/strella.jpg"
+    },
+
+    {
+        "id":87,
+        "name":"Mago ContemplaTiempo",
+        "type":"Spellcaster/Pendulum/Effect",
+        "attack":1200,
+        "defense":600,
+        "image":"/images/tiempo.jpg"
+    },
+
+    {
+        "id":88,
+        "name":"Ood-Eyes Pedulum Dragon",
+        "type":"Dragon/Fusion/Pendulum/Effect",
+        "attack":2500,
+        "defense":2000,
+        "image":"/images/odd-eyes.jpg"
+    },
+
+    {
+        "id":89,
+        "name":"Red Rising Dragon",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":2100,
+        "defense":1600,
+        "image":"/images/red.jpg"
+    },
+
+    {
+        "id":90,
+        "name":"Resonator Call",
+        "type":"Spell Normal",
+        "effect":"",
+        "image":"/images/resonator.jpg"
+    },
+
+    {
+        "id":91,
+        "name":"Shootingcode Talker",
+        "type":"Cyberse/Link/Effect",
+        "attack":2300,
+        "image":"/images/shootigcode.jpg"
+    },
+
+    {
+        "id":92,
+        "name":"Dragón de Polvo De Estrellas De Sincronía Accel",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":2500,
+        "defense":2000,
+        "image":"/images/sinchron_accel.jpg"
+    },
+
+    {
+        "id":93,
+        "name":"Soul Resonator",
+        "type":"Fiend/Tuner/Effect",
+        "attack":500,
+        "defense":200,
+        "image":"/images/soul_resonator.jpg"
+    },
+
+    {
+        "id":94,
+        "name":"Divine Spark Dragon Stardust Sifr",
+        "type":"Dragon/Syncroll/Effect",
+        "attack":4000,
+        "defense":4000,
+        "image":"/images/stardust_sifr.jpg"
+    },
+
+    {
+        "id":95,
+        "name":"Vision Resonator",
+        "type":"Fiend/Tuner/Effect",
+        "attack":400,
+        "defense":400,
+        "image":"/images/vision.jpg"
+    },
+
+    {
+        "id":96,
+        "name":"Crimson Gaia",
+        "type":"Spell Normal",
+        "effect":"Especial Continuo",
+        "image":"/images/crimson-gaia.jpg"
+    }
+]
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards>
+
+  <card>
+    <name>Dark Magician</name>
+    <type>Monster</type>
+    <attack>2500</attack>
+    <defense>2100</defense>
+    <image>https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51c30_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Blue-Eyes White Dragon</name>
+    <type>Monster</type>
+    <attack>3000</attack>
+    <defense>2500</defense>
+    <image>https://s3.duellinksmeta.com/cards/60c2b3a9a0e24f2d54a5179e_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Red-eyes Black Dragon</name>
+    <type>Monster</type>
+    <attack>2400</attack>
+    <defense>2000</defense>
+    <image>https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53317_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Summoned Skull</name>
+    <type>Monster</type>
+    <attack>2500</attack>
+    <defense>1200</defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a5383f_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Dragon Polvo de Estrellas</name>
+    <type>Monster</type>
+    <attack>2500</attack>
+    <defense>2000</defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a537a2_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Dragon de las Rosas Negras</name>
+    <type>Monster</type>
+    <attack>2400</attack>
+    <defense>1800</defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3a9a0e24f2d54a51704_w360.webp</image>
+  </card>
+
+  
+  <card>
+    <name>Raigeki</name>
+    <type>Spell</type>
+    <attack></attack>
+    <defense></defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a5328d_w360.webp</image>
+  </card>
+  
+  <card>
+    <name>Mirror Force</name>
+    <type>Trap</type>
+    <attack></attack>
+    <defense></defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3aba0e24f2d54a52cb2_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Magic Cylender</name>
+    <type>Trap</type>
+    <attack></attack>
+    <defense></defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3aba0e24f2d54a52a74_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Obelisco El Atormentador</name>
+    <type>Monster</type>
+    <attack>4000</attack>
+    <defense>4000</defense>
+    <image> https://s3.duellinksmeta.com/cards/60c2b3aba0e24f2d54a52f24_w360.webp</image>
+  </card>
+
+  <card>
+    <name>Blue-eyes Chaos Max Dragon</name>
+    <type>Monster</type>
+    <attack>4000</attack>
+    <defense>0</defense>
+    <image>https://s3.duellinksmeta.com/cards/60c2b3a9a0e24f2d54a5178e_w360.webp</image>
+  </card>
+
+</cards>
