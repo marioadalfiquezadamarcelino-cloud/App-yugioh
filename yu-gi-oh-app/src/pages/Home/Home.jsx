@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getCards, addCard } from "../../services/firebaseService";
-import { db } from "../../data/firebase";
+import { getCards, addCard,deleteCard, updateCard } from "../../services/firebaseService";
 import Card from "../../components/Card/Card";
 
 import "./Home.css";
@@ -29,47 +28,56 @@ const Home = () => {
     loadCards();
   }, []);
 
-  const addCard = async () => {
-    console.log("Adding card:", newCard);
-
-    try {
-      await addDoc(newCard);
-      console.log("Card added successfully");
-    } catch (error) {
-      console.error("Error adding card:", error);
-    }
-  };
-
-  const deleteCard = async (id) => {
-    await deleteDoc(doc(db, "cards", id));
-  };
-
-
-  const updateCard = async (id) => {
-    await updateDoc(doc(db, "cards", id), {
-      name: "Updated Card"
+  const handleAddCard = async () => {
+  try {
+    await addCard(newCard);
+    setNewCard({
+      name: "",
+      type: "",
+      attack: "",
+      defense: "",
+      image: ""
     });
-  };
+  } catch (error) {
+    console.error("Error adding card:", error);
+  }
+};
 
+  const handleDeleteCard = async (id) => {
+  await deleteCard(id);
+  const data = await getCards();
+  setCards(data);
+};
+
+const handleUpdateCard = async (id) => {
+  await updateCard(id, { name: "Updated Card" });
+  const data = await getCards();
+  setCards(data);
+};
 
   const filteredCards = cards.filter(card =>
     card.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   // zona de exportación y importe
+const importJSON = async (event) => {
+  const file = event.target.files[0];
+  const text = await file.text();
+  const data = JSON.parse(text);
 
-  const importJSON = async (event) => {
-    const file = event.target.files[0];
-    const text = await file.text();
-    const data = JSON.parse(text);
+  for (const card of data) {
+    await addCard(card);
+  }
 
-    data.forEach(async (card) => {
-      await addCard(card);
-    });
-  };
+  const updatedCards = await getCards();
+  setCards(updatedCards);
+};
 
+  
   const exportJSON = async () => {
     const cards = await getCards();
+    const data = await getCards();
+    setCards(data);
 
     const blob = new Blob([JSON.stringify(cards, null, 2)], {
       type: "application/json"
@@ -203,12 +211,6 @@ const Home = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
 
-      <div className="home">
-
-        <h2>Card Collection</h2>
-
-
-      </div>
 
       <p className="home-description">
         Welcome to the Yu-Gi-Oh Card Collection App. Here you can explore different cards,
@@ -267,7 +269,7 @@ const Home = () => {
           }
         />
 
-        <button onClick={addCard}>Add Card</button>
+        <button onClick={handleAddCard}>Add Card</button>
       </div>
 
       {/* CARDS */}
@@ -275,8 +277,8 @@ const Home = () => {
         {filteredCards.map(card => (
           <div key={card.id}>
             <Card {...card} />
-            <button onClick={() => deleteCard(card.id)}>Delete</button>
-            <button onClick={() => updateCard(card.id)}>Update</button>
+            <button onClick={() => handleDeleteCard(card.id)}>Delete</button>
+            <button onClick={() => handleUpdateCard(card.id)}>Update</button>
           </div>
         ))}
       </div>
