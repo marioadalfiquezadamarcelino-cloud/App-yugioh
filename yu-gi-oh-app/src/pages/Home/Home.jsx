@@ -59,60 +59,76 @@ const handleUpdateCard = async (id) => {
     card.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const cardExists = (name) => {
+  return cards.some(card =>
+    card.name?.toLowerCase() === name?.toLowerCase()
+  );
+};
+
   // zona de exportación y importe
 const importJSON = async (event) => {
+
   const file = event.target.files[0];
   const text = await file.text();
   const data = JSON.parse(text);
 
   for (const card of data) {
-    await addCard(card);
+
+    if (!cardExists(card.name)) {
+      await addCard(card);
+    }
+
   }
+  const updatedCards = await getCards();
+  setCards(updatedCards);
+
+  alert("Cards imported successfully!");
+};
+  const exportJSON = async () => {
+  const cards = await getCards();
+
+  const blob = new Blob([JSON.stringify(cards, null, 2)], {
+    type: "application/json"
+  });
+
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "datos.json";
+  a.click();
+};
+
+  // CVS
+const importCSV = async (event) => {
+
+  const file = event.target.files[0];
+  const text = await file.text();
+
+  const rows = text.split("\n").slice(1);
+
+for (const row of rows) {
+
+  const [name, type, attack, defense, image] = row.split(",");
+
+  if (!name) continue;
+
+  if (!cardExists(name)) {
+    await addCard({
+      name,
+      type,
+      attack: Number(attack),
+      defense: Number(defense),
+      image
+    });
+  }
+}
 
   const updatedCards = await getCards();
   setCards(updatedCards);
+
+  alert("Cards imported successfully!");
 };
-
-  
-  const exportJSON = async () => {
-    const cards = await getCards();
-    const data = await getCards();
-    setCards(data);
-
-    const blob = new Blob([JSON.stringify(cards, null, 2)], {
-      type: "application/json"
-    });
-
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "datos.json";
-    a.click();
-  };
-
-
-  // CVS
-  const importCSV = async (event) => {
-    const file = event.target.files[0];
-    const text = await file.text();
-
-    const rows = text.split("\n").slice(1);
-
-    rows.forEach(async (row) => {
-      const [name, type, attack, defense, image] = row.split(",");
-
-      if (!name) return;
-
-      await addCard({
-        name,
-        type,
-        attack: Number(attack),
-        defense: Number(defense),
-        image
-      });
-    });
-  };
 
   const exportCSV = async () => {
     const cards = await getCards();
@@ -133,23 +149,36 @@ const importJSON = async (event) => {
   };
 
   //XML
-  const importXML = async (event) => {
-    const file = event.target.files[0];
-    const text = await file.text();
+ const importXML = async (event) => {
 
-    const xml = new window.DOMParser().parseFromString(text, "text/xml");
-    const cards = xml.querySelectorAll("card");
+  const file = event.target.files[0];
+  const text = await file.text();
 
-    cards.forEach(async (card) => {
-      await addCard({
-        name: card.querySelector("name")?.textContent,
-        type: card.querySelector("type")?.textContent,
-        attack: Number(card.querySelector("attack")?.textContent),
-        defense: Number(card.querySelector("defense")?.textContent),
-        image: card.querySelector("image")?.textContent
-      });
+  const xml = new DOMParser().parseFromString(text, "text/xml");
+  const xmlCards = xml.querySelectorAll("card");
+
+ for (const card of xmlCards) {
+
+  const name = card.querySelector("name")?.textContent;
+
+  if (!cardExists(name)) {
+
+    await addCard({
+      name,
+      type: card.querySelector("type")?.textContent,
+      attack: Number(card.querySelector("attack")?.textContent),
+      defense: Number(card.querySelector("defense")?.textContent),
+      image: card.querySelector("image")?.textContent
     });
-  };
+
+  }
+}
+
+  const updatedCards = await getCards();
+  setCards(updatedCards);
+
+  alert("Cards imported successfully!");
+};
   const exportXML = async () => {
     const cards = await getCards();
 
