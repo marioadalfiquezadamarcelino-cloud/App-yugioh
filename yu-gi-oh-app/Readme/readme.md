@@ -197,9 +197,9 @@ The project includes the following branches:
 
 Example files included:
 
-- datos.json: ![datos(8).json](../../../../../../Downloads/datos%20(8).json) 
-- datos.csv:  ![datos(4).csv](../../../../../../Downloads/datos%20(4).csv) 
-- datos.xml:![datos(1).xml](../../../../../../Downloads/datos%20(1).xml) 
+- datos.json: [datos.json](public/data/datos.json) 
+- datos.csv:  [datos.csv](public/data/datos.csv) 
+- datos.xml: [datos.xml](public/data/datos.xml)
 
 These files can be used to test the import functionality.
 
