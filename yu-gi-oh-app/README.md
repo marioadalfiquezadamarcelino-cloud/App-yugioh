@@ -21,15 +21,16 @@ Users can search cards, build their own deck, and manage cards using a CRUD syst
 
 ## Project Description
 
-This project was developed as a prototype using **React JS,
-JavaScript, HTML, and CSS**. The application allows you to:
+Yu-Gi-Oh Card Collection App is a web application developed with React that allows users to explore, search, and manage cards from the Yu-Gi-Oh universe.
 
-- Display cards from a JSON file
-- View detailed information using a modal window
-- Build a deck with a maximum of 3 copies per card
-- Navigate between multiple pages, sharing the header and footer
+The application provides an interactive experience where users can:
 
-The main objective is to apply best practices for reusable components, clean code, and user experience (UX/UI).
+- View cards from a JSON file and Firebase
+- Search and filter cards by name and type
+- Build their own custom deck
+- Manage cards using CRUD operations (Create, Read, Update, Delete)
+- Read news through a custom RSS system
+- Save favorite news articles
 
 ---
 
@@ -54,8 +55,45 @@ This page demonstrates:
 - useEffect for Firestore data fetching
 - Props communication between components
 
+The Home page displays a collection of cards retrieved from Firebase.
+
+Features:
+
+- Dynamic search by name
+- Data fetching from Firebase Firestore
+- State management using useState
+- Real-time updates with onSnapshot
+- Form to add new cards
+- Delete cards
+- Update cards
 ---
 
+## Deck Page
+
+Allows users to create and manage their own deck.
+
+Features:
+
+Display cards from JSON and Firebase
+
+- Add cards to the deck (maximum 3 copies)
+- Remove cards from the deck
+- Search functionality
+- Filter by type (Monster, Spell, Trap)
+- Click on a card to view it in a modal (zoom view)
+
+---
+## News Page (RSS)
+
+This page uses custom RSS feeds created for the application.
+
+Features:
+
+- Multiple RSS feeds (news, cards, updates, community)
+- XML parsing using DOMParser
+- Favorites system (stored in localStorage)
+- Links to RSS feeds
+---
 ## Technologies Used
 
 - React
@@ -114,7 +152,17 @@ https://www.figma.com/templates/web-design-inspiration/
 https://woko.agency/blog/monitorizar-evaluar-experiencia-usuario/
 
 ---
+## GitHub Branches
 
+The project includes the following branches:
+
+- master
+- develop
+- PrimeraEntrega
+- SegundaEntrega
+- main
+
+---
 ## RSS News Page
 
 The News page consumes an external RSS feed to display the latest Yu-Gi-Oh related updates.
@@ -133,8 +181,53 @@ New cards added in the Home page are saved in the database and can be used in th
 - Then start the development server:
 - npm run dev
 
+
+## Git Branches
+
+The project includes the following branches:
+
+- master
+- develop
+- PrimeraEntrega
+- SegundaEntrega
+- TerceraEntrega
+- main
+
+## Import / Export Examples
+
+Example files included:
+
+- datos.json: [datos.json](public/data/datos.json) 
+- datos.csv:  [datos.csv](public/data/datos.csv) 
+- datos.xml: [datos.xml](public/data/datos.xml)
+
+These files can be used to test the import functionality.
+
+## Responsive Design
+
+The application is fully responsive and uses:
+
+- Flexbox
+- Media Queries
+
+## Clean Code
+
+- camelCase for variables
+- PascalCase for components
+- kebab-case for folders and CSS classes
+- Modular structure with reusable components
+- Centralized Firebase logic in services
+
 ## Project Structure
 
+yu-gi-oh-app/
+|
+├─public/
+|    └─rss/
+|        ├─ news.xml
+|        ├─ cards.xml
+|        ├─ update.xml
+|        └─ community.xml      
 src/
 ├─ components/
 │ ├─ Card/
@@ -145,12 +238,13 @@ src/
 │ ├─ Home/
 │ ├─ Deck/
 │ ├─ About/
-│ └─Privacy/
-│ └─News/
+│ ├─Privacy/
+│ ├─News/
 │ └─Chat/
 | 
 ├─ data/
-│ └─ cards.json
-│ └─ firabase.js
+│  ├─cards.json
+│  └─ firabase.js
 ├─ App.jsx
 └─ main.jsx
+
