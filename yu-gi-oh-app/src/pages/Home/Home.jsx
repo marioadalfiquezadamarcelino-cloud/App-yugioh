@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getCards, addCard,deleteCard, updateCard } from "../../services/firebaseService";
+import * as XLSX from "xlsx";
 import Card from "../../components/Card/Card";
 
 import "./Home.css";
@@ -206,6 +207,46 @@ for (const row of rows) {
   };
 
 
+  const exportXLSX = async () => {
+  const cards = await getCards();
+
+  const worksheet = XLSX.utils.json_to_sheet(cards);
+  const workbook = XLSX.utils.book_new();
+
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Cards");
+
+  XLSX.writeFile(workbook, "datos.xlsx");
+};
+
+const importXLSX = async (event) => {
+  const file = event.target.files[0];
+  const data = await file.arrayBuffer();
+
+  const workbook = XLSX.read(data);
+  const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+
+  const jsonData = XLSX.utils.sheet_to_json(worksheet);
+
+  for (const card of jsonData) {
+
+    if (!cardExists(card.name)) {
+      await addCard({
+        name: card.name,
+        type: card.type,
+        attack: Number(card.attack),
+        defense: Number(card.defense),
+        image: card.image
+      });
+    }
+
+  }
+
+  const updatedCards = await getCards();
+  setCards(updatedCards);
+
+  alert("Excel imported successfully!");
+};
+
   return (
 
     <div className="home">
@@ -223,6 +264,8 @@ for (const row of rows) {
         <label className="import-btn">Import CSV <input type="file" accept=".csv" onChange={importCSV} /></label>
 
         <label className="import-btn">Import XML<input type="file" accept=".xml" onChange={importXML} /></label>
+  
+      <label className="import-btn">  Import XLSX<input type="file" accept=".xlsx" onChange={importXLSX} /></label>
 
         <h3>Export Data</h3>
 
@@ -231,7 +274,10 @@ for (const row of rows) {
         <button className="export-btn" onClick={exportCSV}> Export CSV</button>
 
        <button className="export-btn" onClick={exportXML}>Export XML</button>
+
+        <button className="export-btn" onClick={exportXLSX}>Export XLSX</button>
       </div>
+
 
       <input
         type="text"
