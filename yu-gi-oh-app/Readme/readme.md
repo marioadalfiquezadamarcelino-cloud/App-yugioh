@@ -197,9 +197,10 @@ The project includes the following branches:
 
 Example files included:
 
-- datos.json: [datos.json](public/data/datos.json) 
-- datos.csv:  [datos.csv](public/data/datos.csv) 
-- datos.xml: [datos.xml](public/data/datos.xml)
+- datos.json: [datos.json](public/rss/data/datos.json) 
+- datos.csv:  [datos.csv](public/rss/data/datos.csv) 
+- datos.xml: [datos.xml](public/rss/data/datos.xml)
+- datos.xsxl 
 
 These files can be used to test the import functionality.
 
