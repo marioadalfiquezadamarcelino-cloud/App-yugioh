@@ -181,6 +181,43 @@ New cards added in the Home page are saved in the database and can be used in th
 - Then start the development server:
 - npm run dev
 
+
+## Git Branches
+
+The project includes the following branches:
+
+- master
+- develop
+- PrimeraEntrega
+- SegundaEntrega
+- TerceraEntrega
+- main
+
+## Import / Export Examples
+
+Example files included:
+
+- datos.json
+- datos.csv
+- datos.xml
+
+These files can be used to test the import functionality.
+
+## Responsive Design
+
+The application is fully responsive and uses:
+
+- Flexbox
+- Media Queries
+
+## Clean Code
+
+- camelCase for variables
+- PascalCase for components
+- kebab-case for folders and CSS classes
+- Modular structure with reusable components
+- Centralized Firebase logic in services
+
 ## Project Structure
 
 yu-gi-oh-app/
