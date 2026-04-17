@@ -247,5 +247,7 @@ src/
 │  ├─cards.json
 │  └─ firabase.js
 ├─ App.jsx
+├─ services
+|   └─firebaseService.js
 └─ main.jsx
 
